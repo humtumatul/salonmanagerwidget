@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2021 salonmanagerwidget. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="plugin" version="3.0" group="system" method="upgrade">
+	<name>plg_system_salonmanagerwidget</name>
+	<author>Salon Manager</author>
+	<creationDate>August 2021</creationDate>
+	<copyright>Copyright (c) 2021 salonmanagerwidget. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>developer@salonmanager.net</authorEmail>
+	<authorUrl>https://www.salonmanager.com/</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+	    Your Access Key will be sent to your buisness email address once you enable the web widgets in your iPad app.
+Please go to Side Menu > Admin Dashboard > Settings > Website Widgets.
+
+		Salon Manager Widget is a complete and easy tool for your customers to schedule appointments, see service prices & promotions, buy eGift Cards, see business hours, view service pictures & reviews in your salon website.
+		You can control all features from Salon Manager iPad app right in your salon. You don't need a webmaster or web developer to update your website whenever you need to update information about your business.
+		
+	]]>
+	</description>
+
+	<files>
+		<filename plugin="salonmanagerwidget">salonmanagerwidget.php</filename>
+		<filename>index.html</filename>
+		<filename>models/rules/testint.php</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_salonmanagerwidget.ini</language>
+		<language tag="en-GB">en-GB.plg_system_salonmanagerwidget.sys.ini</language>
+	</languages>
+    
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addrulepath="plugins/system/salonmanagerwidget/models/rules">
+				<field name="salon_widget_id" type="text"
+					default=""
+					description="ACJ_SALON_DESC"
+					label="ACJ_PLG_SEARCH_SALON_LABEL"
+					hint="ACJ_PLG_SEARCH_SALON_LABEL"
+					validate="testint"
+					size="50"
+				/>
+				<field name="salon_widget_key" type="hidden"
+					default=""
+					description="ACJ_SALON__KEY_DESC"
+					label="ACJ_PLG_SEARCH_SALON_KEY_LABEL"
+					size="50"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+    <!-- Note: No spaces or linebreaks allowed between the server tags -->
+    <server type="extension" name="Salon Manager Widget Update Site">https://raw.githubusercontent.com/joomla-extensions/jedchecker/master/manifest.xml</server>
+  </updateservers>
+</extension>

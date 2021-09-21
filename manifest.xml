@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>Salon Manager Widget</name>
+        <description><![CDATA[ Salon Manager Widget is a complete and easy tool for your customers to schedule appointments, see service prices & promotions, buy eGift Cards, see business hours, view service pictures & reviews in your salon website.
+		You can control all features from Salon Manager iPad app right in your salon. You don't need a webmaster or web developer to update your website whenever you need to update information about your business.]]></description>
+        <element>salonmanagerwidget</element>
+        <type>plugin</type>
+        <version>1.0.0</version>
+        <client>administrator</client>
+        <infourl title="Salon Manager Widget Extension">https://github.com/humtumatul/salonmanagerwidget/releases</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">http://demossinfotech.xyz/plg_system_salonmanagerwidget.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <targetplatform name="joomla" version="3.([789]|10)" />
+    </update>
+</updates>
